@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="videos">
+        {% for video in videos %}
+            {{ video.created }} <a href="{{ url_for('view', id=video.id) }}">{{ video.title }}</a>
+            <hr>
+        {% endfor %}
+    </section>
+{% endblock content %}

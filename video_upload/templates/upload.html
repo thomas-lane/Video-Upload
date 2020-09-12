@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+{% block content %}
+    <section>
+        <h1>Upload a Video</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type=submit value="Upload">
+        </form>
+    </section>
+{% endblock content %}

@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf;
+}
+
+header {
+    justify-content: space-between;
+    background-color: #4F4F4F;
+    margin: 0;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.header-item {
+    display: block;
+    padding: 20px;
+}
+
+.header-left {
+    float: left;
+    font-size: 55px;
+    margin: 0;
+}
+
+.header-right {
+    float: right;
+    font-size: 40px;
+    margin: 0;
+}
+
+header a {
+    color: #dfdfdf;
+    text-decoration: none;
+}
+
+.videos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flashed-messages {
+    width: 300px;
+    height: auto;
+    border: yellow;
+    border-radius: 5px;
+}

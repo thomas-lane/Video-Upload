@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{ video.title }}</h1>
+    <section class="videos">
+        <video width="640" height="480" controls autoplay>
+            <source src="{{ url_for('static', filename='video_uploads/' + video.id + '.' + video.ext) }}" type="video/{{ video.ext }}">
+        Video not supported.
+        </video>
+        {% if g.user == 'admin' %}
+            <form method="POST">
+                <label for="title">Title</label>
+                <input name="title" id="title" value="{{ video.title }}" required>
+                <input type="submit" name="save" value="Save">
+                <input type="submit" name="delete" value="Delete">
+            </form>
+        {% endif %}
+    </section>
+{% endblock content %}
